@@ -202,7 +202,7 @@ GRA-T is intended **strictly for:**
 * Controlled laboratory testing
 * Learning and research in offensive security
 
-> **The user is fully responsible for the tool’s usage. Unauthorized use may violate laws and ethical guidelines.**
+> **The user is fully responsible for the tool’s usage.**
 
 ---
 
@@ -221,8 +221,10 @@ Developed and maintained by [@MohaCHarr](https://github.com/MohaCHarr) on [Disco
 * VM and sandbox detection
 * Payload encryption options
 * Use of other legitimate APIs to control the bot :
-  -> Discord ✅, Microsoft Teams 🔁, Slack ❌, Telegram ❌, WhatsApp ❌
-  --> Here MS Teams and Slack are priority targets since it's widespread in corporate contexts and traffic to the Teams API has high chances to be overlooked by SOC Operators.
+
+
+-> Discord ✅, Microsoft Teams 🔁, Slack ❌, Telegram ❌, WhatsApp ❌
+--> Here MS Teams and Slack are priority targets since it's widespread in corporate contexts and traffic to the Teams API has high chances to be overlooked by SOC Operators.
 
 ---
 
