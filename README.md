@@ -224,6 +224,7 @@ Developed and maintained by [@MohaCHarr](https://github.com/MohaCHarr) on [Disco
 
 
 -> Discord ✅, Microsoft Teams 🔁, Slack ❌, Telegram ❌, WhatsApp ❌
+
 --> Here MS Teams and Slack are priority targets since it's widespread in corporate contexts and traffic to the Teams API has high chances to be overlooked by SOC Operators.
 
 ---
@@ -235,3 +236,5 @@ Contributions for **plugin modules**, **feature improvements**, and **platform s
 ---
 
 ## 🐐 Stay Goated
+> Obvious Disclaimer : I made the tool, it is still not very reliable, help and contributions are encouraged, especially if you want to make plugins or to improve the plugin system.
+> Note : I used to sell this tool when i lacked money but now i don't have a reason to make it paid anymore so here it is ! Please don't download plugins from somewhere else than this repo that you didn't verify, they may be backdoored. Always verify everything :D
