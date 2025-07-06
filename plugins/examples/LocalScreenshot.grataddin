@@ -1,0 +1,13 @@
+# plugin.name: LocalScreenshot
+# plugin.description: Takes a screenshot and saves to a specified file.
+# plugin.lang: python
+# plugin.ositworkswith: windows
+# plugin.commands: /plugin use LocalScreenshot OUTFILE=screenshot.png
+# plugin.args: OUTFILE:str
+
+import pyautogui
+
+outfile = sys.argv[1]
+image = pyautogui.screenshot()
+image.save(outfile)
+print(f"[+] Screenshot saved to {outfile}")
