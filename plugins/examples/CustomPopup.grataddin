@@ -1,0 +1,14 @@
+# plugin.name: CustomPopup
+# plugin.description: Creates a custom popup
+# plugin.lang: powershell
+# plugin.ositworkswith: windows
+# plugin.commands: /plugin_use CustomPopup Title="Your Title Here" Body="Text Here"
+# plugin.args: Title:str Body:str
+
+param (
+    [string]$Title,
+    [string]$Body
+)
+
+Add-Type -AssemblyName PresentationFramework
+[System.Windows.MessageBox]::Show($Body, $Title, 'OK', 'Information')
