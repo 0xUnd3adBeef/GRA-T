@@ -4,7 +4,7 @@
 
 ---
 # Take a look !
-![gif](./gif.gif)
+![gif](./screen1_recording.gif)
 
 ---
 
