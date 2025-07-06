@@ -1,3 +1,4 @@
+![Banner](./Banner.png)
 # 🐐 GRA-T – Goatesque Remote Administration Tool
 
 **GRA-T** is a modular, Discord-integrated post-exploitation framework for **red team operators, security researchers, and controlled lab environments**. It provides a stable, plugin-extensible platform for system control, post-exploitation automation, and operational security testing.
