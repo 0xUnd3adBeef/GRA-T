@@ -3,6 +3,10 @@
 **GRA-T Editor** is a modular, dark-themed IDE built specifically for developing, editing, and testing `.grataddin` plugins for [GRA-T](https://github.com/your-grat-repo). It is designed for red teamers, researchers, and security engineers who want a clean workflow for managing post-exploitation or automation scripts in a structured environment.
 
 ---
+# Take a look !
+![gif](./gif.gif)
+
+---
 
 ## ⚙️ Features
 
