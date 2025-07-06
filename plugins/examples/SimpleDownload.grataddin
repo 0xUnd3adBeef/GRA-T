@@ -1,0 +1,18 @@
+# plugin.name: SimpleDownloader
+# plugin.description: Download a file from a URL to a specified path.
+# plugin.lang: python
+# plugin.ositworkswith: linux
+# plugin.commands: /plugin use SimpleDownloader URL=https://example.com/file.exe OUTFILE=file.exe
+# plugin.args: URL:str OUTFILE:str
+
+import requests
+import sys
+
+url = sys.argv[1]
+outfile = sys.argv[2]
+
+r = requests.get(url)
+with open(outfile, "wb") as f:
+    f.write(r.content)
+
+print(f"[+] Downloaded {url} to {outfile}")
