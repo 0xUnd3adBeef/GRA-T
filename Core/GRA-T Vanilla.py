@@ -1,4 +1,4 @@
-# Please, do not share my code with anyone or scan it using virustotal, because VT shares with every AV soft and makes everything public :/
+# Please, do not share my code with anyone or scan it using virustotal, because VT shares with every AV soft and makes everything public (i know i put it on github mais c'est l'intention qui compte)
 # Made with code and time by MOHAAAAAAAAAAAAAAAAAAAAAAAAAAAA (@mohacharr) 
 
 
