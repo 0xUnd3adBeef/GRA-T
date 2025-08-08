@@ -1,78 +1,81 @@
-# 🐐 GRA-T Editor
+# **GRA-T Editor**
 
-**GRA-T Editor** is a modular, dark-themed IDE built specifically for developing, editing, and testing `.grataddin` plugins for [GRA-T](https://github.com/your-grat-repo). It is designed for red teamers, researchers, and security engineers who want a clean workflow for managing post-exploitation or automation scripts in a structured environment.
+*A purpose-built plugin editor for `.grataddin` plugins for GRA-T*
 
 ---
+
 # Take a look !
 ![gif](./screen1_recording.gif)
 
----
 
-## ⚙️ Features
+## Overview
 
-- **Dark-themed GUI:** Consistent with lab workflows.
-- **Metadata sidebar:** View plugin metadata while editing logic.
-- **Metadata editor:** Structured popup to edit `plugin.name`, `plugin.description`, `plugin.lang`, `plugin.ositworkswith`, `plugin.commands`, `plugin.args`.
-- **Syntax-agnostic editor:** Supports `python`, `powershell`, `bash`, and `batch` plugin types.
-- **Validation:** Check plugin readiness before saving or testing.
-- **Embedded terminal:**
-  - Supports PowerShell, CMD, and Bash.
-  - Run arbitrary commands within the IDE.
-  - Show/hide toggle for focus.
-- **In-terminal plugin testing:**
-  - Soon ?
-  - Displays live output with colored styling.
-- **Tabbed editing:** Work on multiple plugins in one window.
+**GRA-T Editor** is a modular, dark-themed integrated development environment designed for creating, editing, and validating `.grataddin` plugins used in [GRA-T](https://github.com/0xUnd3adBeef/GRA-T).
+
 
 ---
 
-## 🧩 Plugin Development Workflow
+## Key Features
 
-| Action | Description |
-|--------|-------------|
-| **New Plugin** | Create a blank `.grataddin`. |
-| **Open Plugin** | Load an existing `.grataddin`. |
-| **Save / Save As** | Save the plugin with structured metadata and logic. |
-| **Edit Metadata** | Modify plugin metadata cleanly. |
-| **Validate Plugin** | Check for missing metadata or empty body. |
-| **Test Plugin** | Run the plugin within the IDE using the selected shell. |
-| **Toggle Terminal** | Show or hide the embedded terminal for focus. |
-
----
-
-## 🖥️ Technical Overview
-
-| Field | Detail |
-|-------|--------|
-| Type | Plugin IDE for `.grataddin` |
-| Languages | Python 3 |
-| GUI Framework | `tkinter`, `ttk` |
-| Terminal Integration | subprocess + threading |
-| Platform Support | Windows ✅, Linux ✅ |
-| Plugin Types | python, powershell, bash, batch |
-| Shells Supported | PowerShell, CMD, Bash |
-| Developer | [@MohaCHarr](https://github.com/MohaCHarr) |
+* **Dark-themed interface** for comfortable extended use in lab or red team settings.
+* **Metadata sidebar** with live display of plugin fields (`name`, `description`, `lang`, `ositworkswith`, `commands`, `args`).
+* **Metadata editor** via structured dialog for clean updates.
+* **Language-agnostic script editing** — supports Python, PowerShell, Bash, and Batch.
+* **Plugin validation** to check completeness before saving or testing.
+* **Embedded terminal** (PowerShell, CMD, Bash) with show/hide toggle.
+* **Tabbed editing** for multiple plugins in one session.
+* **Plugin testing** from within the IDE (planned enhancements for live colored output).
 
 ---
 
-## 🚀 Quick Start
+## Plugin Development Workflow
 
-1️⃣ **Clone:**
+| Action              | Purpose                                                           |
+| ------------------- | ----------------------------------------------------------------- |
+| **New Plugin**      | Create a new `.grataddin` template with empty metadata and logic. |
+| **Open Plugin**     | Load an existing plugin file for review or changes.               |
+| **Edit Metadata**   | Structured interface to modify metadata fields.                   |
+| **Save / Save As**  | Write validated plugin files to disk.                             |
+| **Validate Plugin** | Check for missing or incomplete metadata and empty body.          |
+| **Test Plugin**     | Execute in selected shell for local testing (lab use only).       |
+| **Toggle Terminal** | Show/hide embedded shell to focus on editing.                     |
+
+---
+
+## Technical Overview
+
+| Field                  | Detail                                     |
+| ---------------------- | ------------------------------------------ |
+| Type                   | `.grataddin` Plugin IDE                    |
+| Language               | Python 3                                   |
+| GUI Framework          | `tkinter`, `ttk`                           |
+| Terminal Integration   | `subprocess` + `threading`                 |
+| Supported Platforms    | Windows ✅ / Linux ✅                        |
+| Supported Plugin Types | Python, PowerShell, Bash, Batch            |
+| Supported Shells       | PowerShell, CMD, Bash                      |
+| Developer              | [@0xUnd3adBeef](https://github.com/0xUnd3adBeef) |
+
+---
+
+## Quick Start
+
+1. **Clone or download**:
+
 ```bash
 wget "https://raw.github.com/MohaCHarr/GRA-T/plugins/GRA-T Editor.py"
-````
+```
 
-2️⃣ **Run:**
+2. **Run**:
 
 ```bash
 python3 "GRA-T Editor.py"
 ```
 
-3️⃣ **Start editing or testing your plugins.**
+3. Start creating or editing plugins in a structured, metadata-driven environment.
 
 ---
 
-## 🎹 Keybinds
+## Keyboard Shortcuts
 
 | Keybind        | Action          |
 | -------------- | --------------- |
@@ -85,28 +88,26 @@ python3 "GRA-T Editor.py"
 | `Ctrl+E`       | Edit Metadata   |
 | `Ctrl+V`       | Validate Plugin |
 | `Ctrl+T`       | Test Plugin     |
-| `F1`           | Stop it, get some help |
+| `F1`           | Help/About      |
 
 ---
 
-## Details
+## Use Case
 
-* All plugin tests are local and manual
-* It still sucks at testing, that's why i didn't include it
-
----
-
-## 🚧 Use Case Reminder
-
-**GRA-T Editor is NOT malware.**
-It is a development tool for `.grataddin` plugin scripting under controlled, authorized environments.
+Making plugins for GRA-T and feel cool doing it.
 
 ---
 
-## 📄 License
+## License
 
-Licensed under the "Use responsibly and do not misuse" license.
+Licensed under a “Responsible Use” policy. You are solely responsible for compliance with applicable laws and agreements.
 
 ---
 
-### 🐐 **Happy scripting.**
+## Contact
+
+[GitHub](https://github.com/0xUnd3adBeef) | Discord (on request)
+
+---
+
+### Happy scripting.
