@@ -91,7 +91,7 @@ $client.Close()
 * **Test with known safe environments before operational use.**
 * Ensure **CLI argument parsing** is present where needed.
 * Keep plugins **modular and minimal** for maintainability.
-* PLEASE REFRAIN from :
+* Please refrain from :
 
 -> Doing anything that you didn't explicitly say your script will do
 -> Trying to exfiltrate data from other peoples labs
@@ -105,4 +105,4 @@ $client.Close()
 
 ---
 
-🐐 **For advanced scripting and automation, master `.grataddin` workflows to extend your GRA-T and lab pipeline seamlessly.**
+🐐 **THE GRA-T PIPELINE IS REAL**
