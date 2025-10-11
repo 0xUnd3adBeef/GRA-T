@@ -2,6 +2,13 @@
 
 
 > **Usage scope:** GRA-T is mostly a bot i've made for the fun of it. Feel free to tweak it as you want. You are responsible for complying with laws and contracts.
+Little note :
+> Ive made this bot just for the fun of it, testing my knowledge and exploring with python, it is not meant to be reliable at all.
+> It used to be completely undetected by fully updated : Bitdefender, Windows Security, Avast, Avira and kaspersky (All of them which were UNACTIVATED, free versions may be limited)
+> Also I thought it'd be a good idea to establish remote code execution via well known platforms (discord, telegram, teams and all platforms that allow such stuff) because you can exploit the "trust" people have towards these;
+> Let's say a SOC operator sees some microsoft teams or discord traffic,  it has better chances of not being detected than a domain called `gxqxyu4q6e.ru` (random domain)
+>
+> Well, you now get the idea
 
 ---
 
