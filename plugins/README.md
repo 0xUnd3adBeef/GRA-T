@@ -20,7 +20,7 @@
 * **Dark-themed interface** for comfortable extended use in lab or red team settings.
 * **Metadata sidebar** with live display of plugin fields (`name`, `description`, `lang`, `ositworkswith`, `commands`, `args`).
 * **Metadata editor** via structured dialog for clean updates.
-* **Language-agnostic script editing** — supports Python, PowerShell, Bash, and Batch.
+* **Language-agnostic script editing**  supports Python, PowerShell, Bash, and Batch.
 * **Plugin validation** to check completeness before saving or testing.
 * **Embedded terminal** (PowerShell, CMD, Bash) with show/hide toggle.
 * **Tabbed editing** for multiple plugins in one session.
@@ -106,7 +106,7 @@ Licensed under a “Responsible Use” policy. You are solely responsible for co
 
 ## Contact
 
-[GitHub](https://github.com/0xUnd3adBeef) | Discord (on request)
+[GitHub](https://github.com/0xUnd3adBeef) | Discord : @mohacharr
 
 ---
 
