@@ -48,11 +48,11 @@ Little note :
 | `/upload`, `/download`                                                                                                                                                       |    ✅    |  ✅  |
 | `/ip`, `/tts`                                                                                                                                                                |    ✅    |  ✅  |
 | `/uac`, `/exclude`, `/unpersist`                                                                                                                                             |    ✅    |  ✅  |
-| `/setup_rdp` (Windows)                                                                                                                                                       |    ✅    |  ✅  |
+| `/setup_rdp` (Windows, insta detect)                                                                                                                                                       |    ✅    |  ✅  |
 | `/process list`, `/process kill`                                                                                                                                             |    ✅    |  ✅  |
 | `/service list`                                                                                                                                                              |    ✅    |  ✅  |
 | `/rungit` (GitHub script/EXE runner)                                                                                                                                         |    ✅    |  ✅  |
-| **Plugin system**: `/plugin_import`, `/plugin_list`, `/plugin_info`, `/plugin_use`, `/plugin_stop`, `/plugin_stopall`, `/plugin_delete`, `/plugin_sethook`, `/plugin` (help) |    ❌    |  ✅  |
+| **Plugin system**: `/plugin_import`, `/plugin_list`, `/plugin_info`, `/plugin_use`, `/plugin_stop`, `/plugin_stopall`, `/plugin_delete`, `/plugin_sethook`, `/plugin` (help, insta detect) |    ❌    |  ✅  |
 
 Sources: Vanilla/Fat implementations of the same command sets, plus plugin APIs in Fat.
 
@@ -151,7 +151,7 @@ On first connect the bot syncs slash commands and can post a system info embed w
 
 * No unsolicited beaconing; everything is operator-driven via Discord slash commands.&#x20;
 * Bot permissions are tied to your Discord app/role model; treat tokens as secrets.
-* Features that alter system configuration (e.g., RDP enablement, Defender exclusions, UAC elevation) are **for controlled labs or client-approved tests only**.&#x20;
+* Features that alter system configuration are to be treated with caution.&#x20;
 
 ---
 
@@ -159,16 +159,15 @@ On first connect the bot syncs slash commands and can post a system info embed w
 
 * Linux support is partial vs. Windows (RDP, AV exclusion, UAC are Windows-specific).&#x20;
 * Discord file size constraints; outputs are chunked when needed.&#x20;
-* No encrypted C2 channel by default; all comms go via Discord API. (Roadmap item.)
+
 
 ---
 
 ## Roadmap
 
-* Encrypted C2 channel
 * Plugin signing/verification & safer at-rest storage
-* Additional collaboration platforms (Teams, Slack)
-* VM/sandbox heuristics
+* Additional platforms (Teams, Slack)
+* VM/sandbox detection
 * Cross-platform parity improvements
 
 ---
@@ -188,3 +187,4 @@ Open issues before large changes.
 ## Legal
 
 Use only with explicit authorization. I am **not** liable for misuse.
+Cool kids don't hack when they don't have the authorization
